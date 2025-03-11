@@ -1,54 +1,48 @@
 body {
-	font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .logo {
-	width: 130px;
-	height: 70px;
+    width: 130px;
+    height: 70px;
 }
 
-
 .search {
-	background-color: #cd8ad4;
+    background-color: #cd8ad4;
 }
 
 .search:hover {
-	background-color: #cd8ad4;
+    background-color: #cd8ad4;
 }
 
-.title-guide {
-	background-color: #cd8ad4;
-	text-align: center;
+h2 {
+    padding: 0.7%;
+    text-align: center;
+    margin-top: 0.5%;
+    background-color: #cd8ad4;
+    color: white;
 }
 
-.mrt {
-	width: 300px;
-	height: 300px;
+.notice {
+    text-align: center;
+    color: black;
 }
 
-select {
-	transform: scale(1.1);
+.schedule {
+    padding: 100px;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
-.btn {
-	background-color: #cd8ad4;;
-}
-
-.btn:hover {
-	background-color: #cd8ad4;;
-}
-
-.result {
-	text-align: center;
+td {
+    text-align: center;
 }
 
 .footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
