@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Gfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Q3 PROJECT</title>
+</head>
+
+<body class="bg-light text-dark">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="logo.png" alt="logo">
+            </a>
+
+            <!-- Button for mobile view -->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light"
+                            href="https://amacabago.github.io/Q3PROJECT-Macabago-Galvez-Garces/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light"
+                            href="https://amacabago.github.io/Q3PROJECT-Macabago-Galvez-Garces/sched.html">TRAIN SCHEDULE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light"
+                            href="https://amacabago.github.io/Q3PROJECT-Macabago-Galvez-Garces/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" placeholder="Search...">
+                    <button class="btn search me-2" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <div class="Home">
+        <!-- title -->
+        <h2 class="title-guide container-fluid text-light mt-2 p-2 shadow"> Fare Guide </h2>
+
+        <!-- fare guide -->
+        <div class="guide row bg-secondary shadow rounded p-3 m-3">
+            <!-- img -->
+            <img class="mrt col" src="mrt.png">
+
+            <!-- guide -->
+            <div class="guide-content col ms-2 me-2">
+                <!-- from -->
+                <div class="mb-2">
+                    <label for="from" class="pb-2">Leaving from:</label>
+                    <select id="from" class="form-control">
+                        <option value="S1" id="north">North Ave.</option>
+                        <option value="S2" id="quezon">Quezon Ave.</option>
+                        <option value="S3" id="GMA">GMA Kamuning</option>
+                        <option value="S4" id="araneta">Araneta Cubao</option>
+                        <option value="S5" id="santolan">Santolan Annapolis</option>
+                        <option value="S6" id="ortigas">Ortigas</option>
+                        <option value="S7" id="shaw">Shaw Blvd.</option>
+                        <option value="S8" id="boni">Boni</option>
+                        <option value="S9" id="guadalupe">Guadalupe</option>
+                        <option value="S10" id="buendia">Buendia</option>
+                        <option value="S11" id="ayala">Ayala</option>
+                        <option value="S12" id="magallanes">Magallanes</option>
+                        <option value="S13" id="taft">Taft Ave.</option>
+                    </select>
+                </div>
+
+                <!-- to -->
+                <div>
+                    <label for="to" class="pb-2">Going to:</label>
+                    <select id="to" class="form-control">
+                        <option value="S1" id="north">North Ave.</option>
+                        <option value="S2" id="quezon">Quezon Ave.</option>
+                        <option value="S3" id="GMA">GMA Kamuning</option>
+                        <option value="S4" id="araneta">Araneta Cubao</option>
+                        <option value="S5" id="santolan">Santolan Annapolis</option>
+                        <option value="S6" id="ortigas">Ortigas</option>
+                        <option value="S7" id="shaw">Shaw Blvd.</option>
+                        <option value="S8" id="boni">Boni</option>
+                        <option value="S9" id="guadalupe">Guadalupe</option>
+                        <option value="S10" id="buendia">Buendia</option>
+                        <option value="S11" id="ayala">Ayala</option>
+                        <option value="S12" id="magallanes">Magallanes</option>
+                        <option value="S13" id="taft">Taft Ave.</option>
+                    </select>
+                </div>
+
+                <!-- fare price -->
+                <button type="button" class="btn form-control mt-3 mb-2" id="calculate">TICKET PRICE</button>
+                <button type="button" class="btn form-control" id="discount">20% OFF</button>
+
+                <div class="result bg-dark text-light rounded mt-2 pt-3 pb-1">
+                    <p id="result"></p>
+                </div>
+            </div>
+
+            <!-- ticket -->
+            <div class="ticket col mt-3"> <img src="ticket.png"> </div>
+        </div>
+
+    </div>
+
+    <div class="footer bg-dark text-light p-3 pb-2">
+        <p>ADRIANNA GARCES, SITTIE AINAH MACABAGO, SELENA GALVEZ | 9 - SAPPHIRE</p>
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"> </script>
+</body>
+
+</html>
